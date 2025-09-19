@@ -1,0 +1,25 @@
+.headerWrap {
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+}
+.headerContainer {
+    display: flex;
+    align-items: center; 
+}
+.navigationWrap {
+    display: flex;
+    margin-left: 180px;
+    padding: 16px 0;
+}
+.navigationLink {
+    display: flex;
+    margin-bottom: 4px;
+    padding: 20px 16px;
+    text-decoration: none;
+
+    &__text{
+
+    }
+}
+
