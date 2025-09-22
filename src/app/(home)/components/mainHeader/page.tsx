@@ -15,7 +15,7 @@ export default function MainHeader() {
 				<Link className={styles.navigationLink} href={MainPath.Orders}>
 					<p className={styles.navigationLink__text}>Order Management</p>
 				</Link>
-				<Link className={styles.navigationLink} href={MainPath.Reports}>
+				<Link className={styles.navigationLink} href={MainPath.SalesReports}>
 					<p className={styles.navigationLink__text}>Sales Management</p>
 				</Link>
 				<Link className={styles.navigationLink} href={MainPath.Analytics}>
