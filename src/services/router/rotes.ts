@@ -1,8 +1,8 @@
 export enum MainPath {
 	Main = "/",
-	Users = "/admin/users",
-	Products = "/admin/products",
-	Orders = "/admin/orders",
-	Reports = "/admin/reports",
-	Analytics = "/admin/analytics",
+	Users = "/users",
+	Products = "/products",
+	Orders = "/orders",
+	SalesReports = "/salesReports",
+	Analytics = "/analytics",
 }
