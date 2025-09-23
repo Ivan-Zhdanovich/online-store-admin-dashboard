@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { IUser } from "@/types/axios/commonTypes";
 import styles from "./users.module.scss";
@@ -6,7 +8,7 @@ import axios, { AxiosResponse } from "axios";
 
 export default function Users() {
 	const [users, setUsers] = useState<IUser[]>([]);
-	const baseUrl = "http://localhost:8080/";
+	const baseUrl = "http://localhost:3000";
 
 	const getAllUsers = async () => {
 		try {
@@ -27,6 +29,26 @@ export default function Users() {
 	return (
 		<div>
 			<h1 className={styles.header}>User Management</h1>
+			<table className={styles.tableUsers}>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Email</th>
+						<th>Role</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					{users &&
+						users.map((user) => (
+							<tr key={user.id}>
+								<td>{user.id}</td>
+								<td>{user.email}</td>
+								<td>{user.role}</td>
+							</tr>
+						))}
+				</tbody>
+			</table>
 		</div>
 	);
 }
