@@ -11,3 +11,10 @@ export interface IProduct {
 	price: number;
 	quantity: number;
 }
+
+export interface IOrder {
+	id: number;
+	status: string;
+	total: number;
+	createdAt: Date;
+}
