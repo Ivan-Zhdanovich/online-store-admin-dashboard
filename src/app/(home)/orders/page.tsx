@@ -1,3 +1,5 @@
+"use client";
+
 import { Key, useEffect, useState } from "react";
 import styles from "./orders.module.scss";
 import { IOrder } from "@/types/axios/commonTypes";

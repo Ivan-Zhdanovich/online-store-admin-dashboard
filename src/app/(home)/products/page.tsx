@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import styles from "./products.module.scss";
 import axios, { AxiosResponse } from "axios";

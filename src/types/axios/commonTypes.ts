@@ -18,3 +18,9 @@ export interface IOrder {
 	total: number;
 	createdAt: Date;
 }
+
+export interface IAnalytic {
+	id: number;
+	rating: number;
+	comment: string;
+}
