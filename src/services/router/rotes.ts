@@ -5,4 +5,5 @@ export enum MainPath {
 	Orders = "/orders",
 	SalesReports = "/salesReports",
 	Analytics = "/analytics",
+	ServerError = "/serverError",
 }
