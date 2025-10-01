@@ -1,9 +1,9 @@
 import axios from "axios";
-import { signInEndPoint } from "./apiConstants";
+import { authEndPoint } from "./apiConstants";
 import { ISignInForm } from "@/types/axios/authTypes";
 
 export const loginInToApp = async (baseUrl: string, data: ISignInForm) => {
-	return await axios(`${baseUrl}/${signInEndPoint}`, {
+	return await axios(`${baseUrl}/${authEndPoint}/login`, {
 		method: "Post",
 		data: data,
 		headers: {
