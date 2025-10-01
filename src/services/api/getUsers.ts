@@ -7,5 +7,6 @@ export const getUsers = async (baseUrl: string) => {
 		headers: {
 			"Content-Type": "application/json",
 		},
+		withCredentials: true,
 	});
 };
