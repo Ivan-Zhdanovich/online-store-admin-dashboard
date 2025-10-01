@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./reset.css";
-import MainHeader from "./(home)/components/mainHeader/page";
+import MainHeader from "../components/mainHeader/mainHeader";
 
 export const metadata: Metadata = {
 	title: "Admin dashboard",
