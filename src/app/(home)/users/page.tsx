@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { IUser } from "@/types/axios/commonTypes";
-import styles from "./users.module.scss";
 import { getUsers } from "@/services/api/getUsers";
 import axios, { AxiosResponse } from "axios";
+import SignUpForm from "@/components/signUp/signUp";
+
+import styles from "./users.module.scss";
 
 export default function Users() {
 	const [users, setUsers] = useState<IUser[]>([]);
@@ -49,6 +51,7 @@ export default function Users() {
 						))}
 				</tbody>
 			</table>
+			<SignUpForm />
 		</div>
 	);
 }
