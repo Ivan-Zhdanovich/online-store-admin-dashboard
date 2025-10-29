@@ -1,4 +1,3 @@
-import SignInForm from "@/components/signIn/signIn";
 import Service from "@/pageElements/homeLayout/service/service";
 
 export default function MainPage() {
@@ -6,7 +5,6 @@ export default function MainPage() {
 		<>
 			<main>
 				<Service />
-				<SignInForm />
 			</main>
 		</>
 	);
