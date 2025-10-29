@@ -1,7 +1,8 @@
 .headerWrap {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin-inline: auto;
+    background-color: var(--color-light-spring-green);
 }
 .headerContainer {
     display: flex;
@@ -9,7 +10,7 @@
 }
 .navigationWrap {
     display: flex;
-    margin-left: 180px;
+    margin-left: 340px;
     padding: 16px 0;
 }
 .navigationLink {
